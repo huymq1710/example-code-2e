@@ -19,3 +19,4 @@ Install ``pytest`` and the ``nbval`` plugin:
 Run:
 
     $ pytest --nbval
+
