@@ -25,4 +25,13 @@ if TYPE_CHECKING:
     reveal_type(remain)
     # Revealed type is 'builtins.tuple[builtins.int*]'
 
+"""
+1
+To instantiate a generic class, we give it an actual type parameter, like int here.
 
+2
+Mypy will correctly infer that first is an int…
+
+3
+… and that remain is a tuple of integers.
+"""

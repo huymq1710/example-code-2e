@@ -1,4 +1,5 @@
 # tag::TOMBOLA_ABC[]
+# 1 interface cho class như "bingo cage"
 
 import abc
 

@@ -16,3 +16,11 @@ machine.load('ABC')
 ## note:      Got:
 ## note:          def __iter__(self) -> Iterator[str]
 
+"""
+1
+Upon instantiation of LottoBlower[int], Mypy flags the float.
+
+2
+When calling .load('ABC'), Mypy explains why a str won’t do: str.__iter__ returns an Iterator[str], 
+but LottoBlower[int] requires an Iterator[int].
+"""

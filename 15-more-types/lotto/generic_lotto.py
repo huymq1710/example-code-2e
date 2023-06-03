@@ -27,3 +27,25 @@ class LottoBlower(Tombola, Generic[T]):  # <1>
 
     def inspect(self) -> tuple[T, ...]:  # <6>
         return tuple(self._balls)
+
+"""
+1
+Generic class declarations thường dùng multiple inheritance, 
+Vì ta muốn subclass Generic để xác định formal type parameters để return, kiểu T.
+
+2
+The items argument in __init__ is of type Iterable[T], which becomes Iterable[int] 
+when an instance is declared as LottoBlower[int].
+
+3
+The load method is likewise constrained.
+
+4
+The return type of T now becomes int in a LottoBlower[int].
+
+5
+No type variable here.
+
+6
+Finally, T sets the type of the items in the returned tuple.
+"""
